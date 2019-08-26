@@ -22,22 +22,22 @@ echo $root;*/
 //$search = Usuario::search("jo");
 //echo json_encode($search);
 //carrega um usuário usando o login e a senha
-$usuario = new Usuario();
-$usuario->login("root", "1234567890");
-echo $usuario;
-/*
+//$usuario = new Usuario();
+//$usuario->login("root", "1234567890");
+//echo $usuario;
+
 //Criando um novo usuário
-$aluno = new Usuario("aluno", "@lun0");
+/*$aluno = new Usuario("aluno", "@lun0");
 $aluno->insert();
 echo $aluno;
 */
-/*
+
 //Alterar um usuário
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
-*/
+
 /*$usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->delete();
