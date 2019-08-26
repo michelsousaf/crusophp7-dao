@@ -12,9 +12,9 @@ echo json_encode($usuarios);*/
 
 
 //Carrega um usuário
-$root = new Usuario();
+/*$root = new Usuario();
 $root->loadbyId(3);
-echo $root;
+echo $root;*/
 //Carrega uma lista de usuários
 //$lista = Usuario::getList();
 //echo json_encode($lista);
@@ -22,9 +22,9 @@ echo $root;
 //$search = Usuario::search("jo");
 //echo json_encode($search);
 //carrega um usuário usando o login e a senha
-//$usuario = new Usuario();
-//$usuario->login("root", "!@#$");
-//echo $usuario;
+$usuario = new Usuario();
+$usuario->login("root", "1234567890");
+echo $usuario;
 /*
 //Criando um novo usuário
 $aluno = new Usuario("aluno", "@lun0");

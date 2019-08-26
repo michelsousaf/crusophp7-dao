@@ -40,6 +40,8 @@ class Usuario {
 			$this->setData($results[0]);
 		}
 	}
+
+	//static nao precisa ser instanciado para acessa-lo,  :: $lista = Usuario::getList();
 	public static function getList(){
 		$sql = new Sql();
 		return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogin;");
